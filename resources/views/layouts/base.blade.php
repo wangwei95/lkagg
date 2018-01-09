@@ -10,16 +10,20 @@
     @yield('css')
 </head>
 <body>
-<div class="fly-header layui-bg-black">
-    <div class="layui-container">
-        <a class="fly-logo" href="{{ url('/') }}">
-            <img src="{{ asset('res/images/logo.png') }}" alt="layui">
-        </a>
-    </div>
+<div class="fly-header layui-bg-green">
+    <ul class="layui-nav layui-container">
+        <li class="layui-nav-item"><a class="" href="{{ url('/') }}">
+                <img src="{{ asset('res/images/logo.png') }}" alt="layui" width="150px" height="62px">
+            </a></li>
+        <li class="layui-nav-item layui-this"><a href="{{url("login")}}">登录</a></li>
+        <li class="layui-nav-item"><a href="{{url("reg")}}">注册</a></li>
+        <li class="layui-nav-item"><a href="{{url("home")}}">我的中心</a></li>
+    </ul>
+
 </div>
 @yield('content')
 <div class="fly-footer">
-    <p>©2017-2020 Neusoft. Powered by</p>
+    <p>©2017-2020 Powered by  www.lkegg.top </p>
 </div>
 <script src="{{ asset('res/layui/layui.js') }}"></script>
 @yield('script')
