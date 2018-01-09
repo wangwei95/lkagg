@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -14,41 +15,31 @@ class LoginController extends Controller
 //登录
     public function login(Request $request)
     {
-//        存储用户信息   基本信息及权限
-        $menuList = config("menu");
-        foreach ($menuList as $menuvo) {
-            if (empty($menuvo[1])) {
-                $for1[] = $menuvo;
-            } else {
-                $for2[$menuvo[1]][] = $menuvo;
-            }
-        }
-        $userinfo = [
-            'base' => [
-                'uid' => time(),
-                'username' => date("Y-m-d H:i:s"),
-            ],
-            'auth' => ["menu1" => $for1, "menu2" => $for2]
-        ];
-//        dump($userinfo);
-        $request->session()->put('userinfo', $userinfo);
-        return response()->json([
-            'status' => 0,
-            'msg' => 'OK',
-            'code' => 200,
-            'data' => $request->all()
-        ]);
+        $where = ["username" => $request->username,
+            "password" => $request->pass];
+        $mod = new User();
+        $vo = $mod->where($where)->first();
+        if (!$vo)
+            return C("msg.nouser");
+        $request->session()->put('userinfo', $vo);
+        return C("msg.ok");
     }
 
 //注册
     public function reg(Request $request)
     {
-        return response()->json([
-            'status' => 0,
-            'msg' => 'OK',
-            'code' => 200,
-            'data' => $request->all()
-        ]);
+        //todo后台表单验证
+        $mod = new User();
+        if ($mod->where('username', $request->username)->count()) {
+            return C("msg.emailOnly");
+        }
+        $mod->username = $request->username;
+        $mod->password = $request->pass;
+        if ($mod->save()) {
+            return C('msg.ok');
+        } else {
+            return C('msg.err');
+        }
     }
 
     //退出

@@ -16,8 +16,8 @@
                                     <label for="L_username" class="layui-form-label">用户名</label>
                                     <div class="layui-input-inline">
                                         <input type="text" id="L_username" name="username" required
-                                               lay-verify="required|username" lay-verType="tips"
-                                               autocomplete="off" class="layui-input">
+                                               lay-verify="required|email" lay-verType="tips"
+                                               autocomplete="off" class="layui-input" value="www@qq.com">
                                     </div>
                                 </div>
                                 <div class="layui-form-item">
@@ -26,11 +26,12 @@
                                         <input type="password" id="L_pass" name="pass" required
                                                lay-verify="required|pass"
                                                lay-verType="tips"
-                                               autocomplete="off" class="layui-input">
+                                               autocomplete="off" class="layui-input" value="111111">
                                     </div>
                                 </div>
                                 <div class="layui-form-item">
-                                    <button class="layui-btn" type="button" lay-filter="go" lay-jump="{{ url('/home') }}" lay-submit>
+                                    <button class="layui-btn" type="button" lay-filter="go"
+                                            lay-jump="{{ url('/home') }}" lay-submit>
                                         立即登录
                                     </button>
                                     {{--<span style="padding-left:20px;">             <a href="forget.html">忘记密码？</a></span>--}}

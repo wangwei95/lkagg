@@ -1,13 +1,11 @@
 <?php
 return [
-    //[id,fid,name,url,show]
-    //会员
-    [1, 0, "会员管理", "", 1],
-    [2, 1, "会员创建", "member/add", 1],
-    [3, 1, "会员列表", "member", 1],
-    [4, 1, "会员信息修改", "member/update", 0],
-    //营销管理功能块
-    [10, 0, "营销管理", "", 1],
-    [11, 10, "积分活动管理", "score/list", 1],
-    [12, 10, "卡券活动管理", "card/list", 1],
+    ["我的信息", "home"],
+    ["买入", "member/add"],
+    ["卖出", "member"],
+    ["我的委托", "member/update"],
+    ["提现", ""],
+    ["提币", "score/list"],
+    ["我的成交", "card/list"],
+    ["充值", "card/list"],
 ];

@@ -11,14 +11,15 @@
                 <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">
                     <div class="layui-tab-item layui-show">
                         <div class="layui-form layui-form-pane">
-                            <form method="post" action="{{url("login")}}">
+                            <form method="post" action="{{url("reg")}}">
                                 <div class="layui-form-item">
-                                    <label for="L_username" class="layui-form-label">用户名</label>
+                                    <label for="L_username" class="layui-form-label">邮箱</label>
                                     <div class="layui-input-inline">
                                         <input type="text" id="L_username" name="username" required
-                                               lay-verify="required|username" lay-verType="tips"
+                                               lay-verify="required|email" lay-verType="tips"
                                                autocomplete="off" class="layui-input">
                                     </div>
+                                    <div class="layui-form-mid layui-word-aux">方便找回密码</div>
                                 </div>
                                 <div class="layui-form-item">
                                     <label for="L_pass" class="layui-form-label">密码</label>

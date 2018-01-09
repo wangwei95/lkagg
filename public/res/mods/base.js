@@ -33,7 +33,7 @@ layui.define(['layer', 'form', 'element', 'upload','laydate','table'], function 
                 url: url,
                 async: false,
                 success: function (res) {
-                    if (res.status === 0) {
+                    if (res.state === 0) {
                         success && success(res);
                     } else {
                         layer.msg(res.msg || res.code, {shift: 6});
