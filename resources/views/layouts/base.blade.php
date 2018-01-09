@@ -10,7 +10,7 @@
     @yield('css')
 </head>
 <body>
-<div class="fly-header layui-bg-green">
+<div class="fly-header layui-bg-black">
     <ul class="layui-nav layui-container">
         <li class="layui-nav-item"><a class="" href="{{ url('/') }}">
                 <img src="{{ asset('res/images/logo.png') }}" alt="layui" width="150px" height="62px">
@@ -23,7 +23,7 @@
 </div>
 @yield('content')
 <div class="fly-footer">
-    <p>©2017-2020 Powered by {{C('my.url')}} </p>
+    <p>{{C('my.copyright')}} </p>
 </div>
 <script src="{{ asset('res/layui/layui.js') }}"></script>
 @yield('script')
