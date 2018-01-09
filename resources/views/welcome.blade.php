@@ -1,32 +1,39 @@
 @extends('layouts.base')
+@section("title","链克交易平台官网")
 @section("content")
     <div class="layui-bg-gray">
         <!--居中-->
         <div class="layui-container">
-            <div class="layui-row layui-col-space10" >
-                <div class="layui-col-md9" >
-                    <div   class="fly-panel"  style="margin-top:10px;"><h3  id ="main1" class="fly-panel-title">鸡蛋价格(小时)</h3>
-                        <div  id="main"   style="height:322px;">
+            <div class="layui-row layui-col-space10">
+                <div class="layui-col-md9">
+                    <div class="fly-panel" style="margin-top:10px;"><h3 id="main1" class="fly-panel-title">鸡蛋价格(小时)</h3>
+                        <div id="main" style="height:322px;">
                         </div>
-                        <div class="layui-col-md12" >
-                            <li rel="nofollow"  style="background-color: #3c3c3c;color:#ffff00;"> <i class="layui-icon">&#xe756;</i> 风险提示：数字货币投资存在一定的风险，请适量控制您的资金，不要投资您所不了解的数字货币，拒绝传销组织，警惕虚假宣传。</li>
-                            <li id="buydiv"  style="background-color: #3c3c3c;color:#ff00ff;"> <i class="layui-icon">&#xe756;</i>  链克网网站地址 liankw.cc</li>
+                        <div class="layui-col-md12">
+                            <li rel="nofollow" style="background-color: #3c3c3c;color:#ffff00;"><i class="layui-icon">&#xe756;</i>
+                                风险提示：数字货币投资存在一定的风险，请适量控制您的资金，不要投资您所不了解的数字货币，拒绝传销组织，警惕虚假宣传。
+                            </li>
+                            <li id="buydiv" style="background-color: #3c3c3c;color:#ff00ff;"><i class="layui-icon">&#xe756;</i>
+                                链克网网站地址 liankw.cc
+                            </li>
                         </div>
                     </div>
                 </div>
                 <div class="layui-col-md3">
-                    <div class="fly-panel " style="margin-top:10px"> <h3 class="fly-panel-title"><font color='#ff5722'><B>链克网 liankw.cc </B></font></h3>
+                    <div class="fly-panel " style="margin-top:10px"><h3 class="fly-panel-title"><font
+                                    color='#ff5722'><B>链克网 liankw.cc </B></font></h3>
                         <ul class="fly-panel-main fly-list-static">
 
 
                             <div class="fly-panel-main" style="padding: 0px 15px;">
 
-                                <li rel="nofollow"  style="background-color: #e9e183;">  1.︴<a href="/download/liankw.cc.rar" target="_blank"><B>下载查询工具</B></a> </li>
-                                <li rel="nofollow"  style="background-color: #e3d6bf;">  2.︴客服QQ:279910060 </li>
-                                <li rel="nofollow"  style="background-color: #e9e183;">  3.︴工作时间:9:00 - 22:00 </li>
-                                <li rel="nofollow"  style="background-color: #e3d6bf;">  4.︴QQ交流群:68766511</li>
-                                <li rel="nofollow"  style="background-color: #e9e183;">  5.︴如有问题联系下方官方微信</li>
-                                <img src="/wx.jpg"  style= "width:250px;height:250px;padding: 0px 0px;">
+                                <li rel="nofollow" style="background-color: #e9e183;"> 1.︴<a
+                                            href="/download/liankw.cc.rar" target="_blank"><B>下载查询工具</B></a></li>
+                                <li rel="nofollow" style="background-color: #e3d6bf;"> 2.︴客服QQ:279910060</li>
+                                <li rel="nofollow" style="background-color: #e9e183;"> 3.︴工作时间:9:00 - 22:00</li>
+                                <li rel="nofollow" style="background-color: #e3d6bf;"> 4.︴QQ交流群:68766511</li>
+                                <li rel="nofollow" style="background-color: #e9e183;"> 5.︴如有问题联系下方官方微信</li>
+                                <img src="/wx.jpg" style="width:250px;height:250px;padding: 0px 0px;">
                             </div>
                         </ul>
 
@@ -49,103 +56,103 @@
                             <th>成交额</th>
                         </tr>
                         </thead>
-                        <tbody  id = "chengjiao">
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tbody id="chengjiao">
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>12:37:53</td>
                             <td>4.68</td>
                             <td>112.21</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>12:22:42</td>
                             <td>4.68</td>
                             <td>388.05</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>12:22:42</td>
                             <td>4.68</td>
                             <td>355.32</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:52:45</td>
                             <td>4.68</td>
                             <td>378.7</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:52:45</td>
                             <td>4.68</td>
                             <td>238.44</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:51:03</td>
                             <td>4.68</td>
                             <td>925.71</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:51:03</td>
                             <td>4.68</td>
                             <td>243.12</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:50:31</td>
                             <td>4.68</td>
                             <td>486.23</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:50:31</td>
                             <td>4.68</td>
                             <td>626.49</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:49:58</td>
                             <td>4.68</td>
                             <td>28.05</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:49:58</td>
                             <td>4.69</td>
                             <td>707.48</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:49:58</td>
                             <td>4.69</td>
                             <td>299.86</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:48:57</td>
                             <td>4.69</td>
                             <td>248.32</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:48:57</td>
                             <td>4.69</td>
                             <td>342.03</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:46:02</td>
                             <td>4.69</td>
                             <td>491.96</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:46:02</td>
                             <td>4.7</td>
                             <td>323.98</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:44:18</td>
                             <td>4.7</td>
                             <td>746.55</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:40:32</td>
                             <td>4.7</td>
                             <td>65.73</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:40:32</td>
                             <td>4.7</td>
                             <td>755.94</td>
                         </tr>
-                        <tr style= 'background-color: #242933;color: #00ff00;height:33px;'>
+                        <tr style='background-color: #242933;color: #00ff00;height:33px;'>
                             <td>11:39:43</td>
                             <td>4.7</td>
                             <td>136.16</td>
@@ -159,7 +166,7 @@
 
                     <div class="layui-col-md12">
 
-                        <table class="layui-table" lay-skin="line"  lay-size="sm">
+                        <table class="layui-table" lay-skin="line" lay-size="sm">
                             <colgroup>
                                 <col width="60">
                                 <col width="100">
@@ -176,149 +183,209 @@
                                 <th>方式</th>
                             </tr>
                             </thead>
-                            <tbody  id = "myDiv">
+                            <tbody id="myDiv">
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.9</td>
                                 <td>1</td>
                                 <td>4.9</td>
                                 <td> 卖 10</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.9> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.9> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.77</td>
                                 <td>157</td>
                                 <td>748.89</td>
                                 <td> 卖 9</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.77> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.77> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.76</td>
                                 <td>840</td>
                                 <td>3998.4</td>
                                 <td> 卖 8</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.76> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.76> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.75</td>
                                 <td>894</td>
                                 <td>4246.5</td>
                                 <td> 卖 7</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.75> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.75> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.74</td>
                                 <td>1034</td>
                                 <td>4901.16</td>
                                 <td> 卖 6</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.74> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.74> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.73</td>
                                 <td>669</td>
                                 <td>3164.37</td>
                                 <td> 卖 5</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.73> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.73> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.72</td>
                                 <td>944</td>
                                 <td>4455.68</td>
                                 <td> 卖 4</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.72> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.72> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.71</td>
                                 <td>246</td>
                                 <td>1158.66</td>
                                 <td> 卖 3</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.71> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.71> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.7</td>
                                 <td>510</td>
                                 <td>2397</td>
                                 <td> 卖 2</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.7> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.7> 买入
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #00FF00;'>
                                 <td>4.69</td>
                                 <td>862</td>
                                 <td>4042.78</td>
                                 <td> 卖 1</td>
-                                <td><button class='layui-btn layui-btn-danger layui-btn-mini' id ='buy'  value = 4.69> 买入 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-danger layui-btn-mini' id='buy' value=4.69> 买入
+                                    </button>
+                                </td>
                             </tr>
                             </tbody>
-                            <tbody id = "myDiv1">
+                            <tbody id="myDiv1">
 
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.68</td>
                                 <td>326</td>
                                 <td>1525.68</td>
                                 <td> 买 1</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.68> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.68> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.67</td>
                                 <td>1372</td>
                                 <td>6407.24</td>
                                 <td> 买 2</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.67> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.67> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.66</td>
                                 <td>862</td>
                                 <td>4016.92</td>
                                 <td> 买 3</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.66> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.66> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.24</td>
                                 <td>41</td>
                                 <td>173.84</td>
                                 <td> 买 4</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.24> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.24> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.23</td>
                                 <td>929</td>
                                 <td>3929.67</td>
                                 <td> 买 5</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.23> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.23> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.22</td>
                                 <td>636</td>
                                 <td>2683.92</td>
                                 <td> 买 6</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.22> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.22> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.21</td>
                                 <td>944.93112</td>
                                 <td>3978.1600152</td>
                                 <td> 买 7</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.21> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.21> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.2</td>
                                 <td>1006</td>
                                 <td>4225.2</td>
                                 <td> 买 8</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.2> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.2> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.19</td>
                                 <td>890</td>
                                 <td>3729.1</td>
                                 <td> 买 9</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.19> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.19> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             <tr style='background-color: #242933;color: #FF0000;'>
                                 <td>4.18</td>
                                 <td>171</td>
                                 <td>714.78</td>
                                 <td> 买 10</td>
-                                <td><button class='layui-btn layui-btn-normal layui-btn-mini' id ='sell'  value = 4.18> 卖出 </button></td>
+                                <td>
+                                    <button class='layui-btn layui-btn-normal layui-btn-mini' id='sell' value=4.18> 卖出
+                                    </button>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
@@ -334,7 +401,7 @@
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var div1 = document.getElementById('main1')
-        var div= document.getElementById('main')
+        var div = document.getElementById('main')
 
         var myChart = echarts.init(div);
         //用于使chart自适应高度和宽度,通过窗体高宽计算容器高宽
@@ -351,7 +418,7 @@
         // 指定图表的配置项和数据
         // 指定图表的配置项和数据
         option = {
-            tooltip : {
+            tooltip: {
                 trigger: 'axis',
                 formatter: function (params) {
                     var res = params[0].seriesName + ' ' + params[0].name + '时';
@@ -360,36 +427,36 @@
                     return res;
                 }
             },
-            dataZoom : {
-                show : true,
+            dataZoom: {
+                show: true,
                 realtime: true,
-                start : 80,
-                end : 100
+                start: 80,
+                end: 100
             },
-            xAxis : [
+            xAxis: [
                 {
-                    type : 'category',
-                    boundaryGap : true,
-                    axisTick: {onGap:false},
-                    splitLine: {show:false},
-                    data : [ "2017/11/28/17", "2017/11/28/18", "2017/11/28/19" ]
+                    type: 'category',
+                    boundaryGap: true,
+                    axisTick: {onGap: false},
+                    splitLine: {show: false},
+                    data: ["2017/11/28/17", "2017/11/28/18", "2017/11/28/19"]
 
                 }
             ],
-            yAxis : [
+            yAxis: [
                 {
-                    type : 'value',
-                    scale:true,
-                    boundaryGap: [0.001,0.001]
+                    type: 'value',
+                    scale: true,
+                    boundaryGap: [0.001, 0.001]
                 }
             ],
-            series : [
+            series: [
                 {
-                    name:'鸡蛋',
-                    type:'k',
-                    data:[ // 开盘，收盘，最低，最高
-                        [7.5,7.6,7.4,7.8],
-                        [7.5,7.6,7.4,7.8],
+                    name: '鸡蛋',
+                    type: 'k',
+                    data: [ // 开盘，收盘，最低，最高
+                        [7.5, 7.6, 7.4, 7.8],
+                        [7.5, 7.6, 7.4, 7.8],
                     ],
 
                 }
@@ -400,7 +467,7 @@
         //alert(option.series[0].data);
         var ss = [
             {
-                "data":[
+                "data": [
                     "2018/01/03/23",
                     "2018/01/04/00",
                     "2018/01/04/01",
@@ -504,7 +571,7 @@
                 ]
             },
             {
-                "data":[
+                "data": [
                     [
                         4.61,
                         4.61,
@@ -1108,11 +1175,12 @@
                 ]
             }
         ];
-        if (ss[0]){
+        if (ss[0]) {
 
-            option.xAxis[0].data  = ss[0].data;
+            option.xAxis[0].data = ss[0].data;
             option.series[0].data = ss[1].data;
-        };
+        }
+        ;
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);

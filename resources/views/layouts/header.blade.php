@@ -1,5 +1,5 @@
 <div class="layui-header">
-    <div ><a href="{{url("/home")}}" class="layui-logo"> <img src="{{ asset('res/images/logo.png') }}" alt="layui" width="150px" height="62px"></a></div>
+    <div ><a href="{{url("/")}}" class="layui-logo"> <img src="{{ asset('res/images/logo.png') }}" alt="layui" width="150px" height="62px"></a></div>
     <ul class="layui-nav layui-layout-right">
         <li class="layui-nav-item">
             <a href="{{url("/")}}">
