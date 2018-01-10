@@ -2,24 +2,27 @@
 
 namespace App\Jobs;
 
+use App\Buy;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 
-class Buy implements ShouldQueue
+class BuyJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct()
+    protected $id;
+
+    public function __construct($id)
     {
         //
+        $this->id = $id;
     }
 
     /**
@@ -29,6 +32,7 @@ class Buy implements ShouldQueue
      */
     public function handle()
     {
-        //
+        $vo = Buy::find($this->id);
+
     }
 }

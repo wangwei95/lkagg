@@ -1,7 +1,9 @@
 <?php
 //交易模型
 namespace App;
+
 use Illuminate\Support\Facades\DB;
+
 class Deal
 {
     //买单操作
@@ -15,7 +17,7 @@ class Deal
                 $vo["otime"] = time();
                 $vo["uid"] = session("userinfo.uid");
                 return Buy::insertGetId($vo);
-            });
+            }, 3);
         } catch (\Exception $exception) {
             return false;
         }
