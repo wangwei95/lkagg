@@ -1,7 +1,7 @@
 ﻿/**
  @Name: 主Base
  */
-layui.define(['layer', 'form', 'element', 'upload','laydate','table'], function (exports) {
+layui.define(['layer', 'form', 'element', 'upload', 'laydate', 'table'], function (exports) {
     var $ = layui.jquery
         , form = layui.form
         , layer = layui.layer
@@ -51,10 +51,10 @@ layui.define(['layer', 'form', 'element', 'upload','laydate','table'], function 
                 , url: '/stripe/upimg' //上传接口
                 , accept: type || "images"
                 , done: function (res) {
-                    if(res.state==200){
-                        $("#img_"+id).val(res.url);
-                        $("#url_"+id).attr("src",res.url);
-                    }else{
+                    if (res.state == 200) {
+                        $("#img_" + id).val(res.url);
+                        $("#url_" + id).attr("src", res.url);
+                    } else {
                         layer.msg(res.msg, {shift: 6});
                     }
                 }
@@ -80,7 +80,9 @@ layui.define(['layer', 'form', 'element', 'upload','laydate','table'], function 
     form.on('submit(alert)', function (data) {
         url = data.form.action;
         base.json(url, data.field, function (res) {
-            layer.msg(res.msg || res.code);
+            layer.msg(res.msg || res.code, function () {
+                location.reload()
+            });
         })
         return false;
     });

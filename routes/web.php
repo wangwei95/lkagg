@@ -9,35 +9,37 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/test', 'TestController@index' );
-Route::post('/test', 'TestController@sub' );
-//首页
+Route::get('/test', 'TestController@index');
+Route::post('/test', 'TestController@sub');
 Route::get('/', function () {
     return view('welcome');
-})->name('index');
-//登录后首页home
-Route::get('/home', 'HomeController@index')->name('home');
-//登录页
+})->name('index');//首页
+Route::get('/home', 'HomeController@index')->name('home');//登录后首页home
 Route::get('/login', function () {
     return view("login");
-});
-//登录提交
-Route::post('/login', 'LoginController@login');
-//注册页
+});//登录页
+Route::post('/login', 'LoginController@login');//登录提交
 Route::get('/reg', function () {
     return view("register");
-});
-//注册提交
-Route::post('/reg', 'LoginController@reg');
-//退出
-Route::get('/logout', 'LoginController@logout');
-
-
+});//注册页
+Route::post('/reg', 'LoginController@reg');//注册提交
+Route::get('/logout', 'LoginController@logout');//退出
 //图片上传
 Route::post('/stripe/upimg', 'UploadController@img');
 Route::post('/stripe/editerimg', 'UploadController@editerimg');
 
+//交易
+Route::middleware(['myauth'])->get('/buy', function () {
+    return view("user.buy");
+});//买页
+Route::post('/buy', 'DealController@buy');//买提交
 
-//用户管理
-Route::get('/member/lists', 'MemberController@lists');
-Route::resource('member', 'MemberController');
+Route::middleware(['myauth'])->get('/sell', function () {
+    return view("register");
+});//卖页
+Route::post('/sell', 'MemberController@lists');//卖提交
+
+Route::middleware(['myauth'])->get('/sell', function () {
+    return view("register");
+});//订单列表
+

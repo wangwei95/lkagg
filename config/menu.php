@@ -1,8 +1,8 @@
 <?php
 return [
     ["我的信息", "home"],
-    ["买入", "member/add"],
-    ["卖出", "member"],
+    ["买入", "buy"],
+    ["卖出", "sell"],
     ["我的委托", "member/update"],
     ["提现", ""],
     ["提币", "score/list"],

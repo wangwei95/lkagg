@@ -1,14 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Deal;
 use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
     function index()
     {
-      return [1,3,4,56,6,];
+
+      //  dd(session("userinfo"));
+        $vo=["num"=>1.11,'price'=>2.66];
+        Deal::djdd($vo);
+
+
+
    }
 
     public function sub(Request $request)

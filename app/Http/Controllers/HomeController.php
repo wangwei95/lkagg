@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $view = User::find(session("userinfo.uid"));
+        $view = User::getUser();
         return view('home', $view);
     }
 }
